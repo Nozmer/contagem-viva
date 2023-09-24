@@ -5,7 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <!-- map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- lib -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- content -->
+    <link rel="stylesheet" href="assets/css/menu1.css">
+    <link rel="stylesheet" href="assets/css/menu2.css">
     <link rel="stylesheet" href="assets/font/stylesheet.css">
 </head>
 
@@ -13,7 +23,7 @@
     <div id="conteinerLayout">
         <div id="segmentedMenu">
             <img src="assets/img/logo.png" alt="">
-            <div id="horizontal_navbar">
+            <div style="display: none;" id="horizontal_navbar">
                 <div id="select_button_navbar" class="button_navbar">
                     <h1>INÍCIO</h1>
                 </div>
@@ -27,14 +37,42 @@
                     <h1>SOBRE NÓS</h1>
                 </div>
             </div>
+            <div id="verticalMobile_navbar">
+                <div id="selectIconMenu" class="iconBoxVerticalMobile">
+                    <img src="assets/img/icons/icon-1.svg" alt="">
+                </div>
+                <div class="iconBoxVerticalMobile">
+                    <img src="assets/img/icons/icon-2.svg" alt="">
+                </div>
+                <div class="iconBoxVerticalMobile">
+                    <img src="assets/img/icons/icon-3.svg" alt="">
+                </div>
+                <div class="iconBoxVerticalMobile">
+                    <img src="assets/img/icons/icon-4.svg" alt="">
+                </div>
+            </div>
         </div>
 
-        <div style="display: none;"" id="menu1">
+        <!-- Menu início -->
+        <div class="menus" id="menu1">
             <div id="leastUpdatesBox">
                 <div id="boxGreenNews">
                     <h1>ÚLTIMAS ATUALIZAÇÕES DO MÊS</h1>
                 </div>
-                <div id="slideNews">
+
+                <div class="slider-container">
+                    <div id="slider">
+                        <div class="slide">
+                            <img src="assets/img/slide/slide.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/img/slide/slide.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/img/slide/slide.png" alt="">
+                        </div>
+                    </div>
+
                     <div id="horizontalButtonsNext">
                         <div class="ballButtonNext">
                             <svg id="arrowButton" xmlns="http://www.w3.org/2000/svg" width="14" height="18"
@@ -46,8 +84,6 @@
                         </div>
                         <div id="verticalIndicadorBall">
                             <div id="selectballIndicador" class="ballIndicador"></div>
-                            <div class="ballIndicador"></div>
-                            <div class="ballIndicador"></div>
                             <div class="ballIndicador"></div>
                             <div class="ballIndicador"></div>
                         </div>
@@ -81,12 +117,12 @@
         </div>
 
         <!-- Menu eventos e pontos -->
-        <div id="menu2">
+        <div class="menus" style="display: none;" id="menu2">
             <div id="conteinerLeft_menu2">
                 <div id="segmented_conteinerLeft_menu2">
                     <div id="inputSearchBox">
                         <img src="assets/img/icons.svg" alt="">
-                        <input type="text" placeholder="Pesquise eventos">
+                        <input onchange="search()" type="text" placeholder="Pesquise eventos">
                     </div>
                     <div id="buttoncontainer_menu2">
                         <div class="select_buttonBox_menu2 buttonBox_menu2">
@@ -98,47 +134,46 @@
                     </div>
                 </div>
 
-                <div id="boxesWrap_menu2">
-                    <div class="boxWrapEvent_menu2">
-                        <img src="assets/img/Image.png" alt="">
-                        <div class="paragraphContent_boxWrap">
-                            <h2>TRIBUTE OF NIRVANA BY SEATTLE SUPERSONICS & ORQUESTRA SINFÔNICA VILLA LOBOS</h2>
-                            <h3>Av. João César de Oliveira</h3>
-                            <h3>11 – 16 de set.</h3>
+                <div class="boxesWrap_menu2">
+
+                </div>
+
+                <div id="markerPage">
+                    <h2>Página 1 de 5</h2>
+                    <div id="spaceButtonMark">
+                        <div onclick="prevPage()" class="buttonMarkPage">
+                            <h1>&lt</h1>
                         </div>
-                    </div>
-                    <div class="boxWrapEvent_menu2">
-                        <img src="assets/img/Image.png" alt="">
-                        <div class="paragraphContent_boxWrap">
-                            <h2>TRIBUTE OF NIRVANA BY SEATTLE SUPERSONICS & ORQUESTRA SINFÔNICA VILLA LOBOS</h2>
-                            <h3>Av. João César de Oliveira</h3>
-                            <h3>11 – 16 de set.</h3>
-                        </div>
-                    </div>
-                    <div class="boxWrapEvent_menu2">
-                        <img src="assets/img/Image.png" alt="">
-                        <div class="paragraphContent_boxWrap">
-                            <h2>TRIBUTE OF NIRVANA BY SEATTLE SUPERSONICS & ORQUESTRA SINFÔNICA VILLA LOBOS</h2>
-                            <h3>Av. João César de Oliveira</h3>
-                            <h3>11 – 16 de set.</h3>
-                        </div>
-                    </div>
-                    <div class="boxWrapEvent_menu2">
-                        <img src="assets/img/Image.png" alt="">
-                        <div class="paragraphContent_boxWrap">
-                            <h2>TRIBUTE OF NIRVANA BY SEATTLE SUPERSONICS & ORQUESTRA SINFÔNICA VILLA LOBOS</h2>
-                            <h3>Av. João César de Oliveira</h3>
-                            <h3>11 – 16 de set.</h3>
+                        <div onclick="nextPage()" class="buttonMarkPage">
+                            <h1>></h1>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="conteinerRight_menu2">
+            <div id="map">
+                <!-- <div class="layoutColumnInfoElementMap">
+                    <div style="display: none;" class="buttonOpenInfoMap">
+                        <img src="assets/img/Image.png" alt="">
+                        <div class="content_buttonOpenInfoMap">
+                            <h2 class="textLimiter">TRIBUTE OF NIRVANA BY SEATTLE SUPERSONICS & ORQUESTRA SINFÔNICA
+                                VILLA LOBOS</h2>
+                            <h3 class="textLimiter">Av. João César de Oliveira</h3>
+                            <h3>11 – 16 de set.</h3>
+                        </div>
+                    </div>
 
+                    <div class="buttonMapLocal">
+                        <img src="assets/img/Image.png" alt="">
+                        <h2 class="textLimiter">TRIBUTE OF NIRVANA BY SEATTLE SUPERSONICS & ORQUESTRA SINFÔNICA VILLA
+                            LOBOS</h2>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>
+
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
