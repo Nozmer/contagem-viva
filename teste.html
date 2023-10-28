@@ -4,97 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrossel de Slides com Anime.js</title>
+    <title>Document</title>
     <style>
-        body {
-            margin: 0;
-            /* Remova as margens padrão do corpo */
-            overflow: hidden;
-            /* Evite a barra de rolagem horizontal */
-        }
-
-        .slider-container {
-            width: 100vw;
-            /* Largura do contêiner do slider igual à largura da janela */
-            overflow: hidden;
-            /* Esconde o conteúdo que se estende além do contêiner */
-            position: relative;
-            /* Necessário para animação de deslizamento */
-        }
-
-        .slider {
+        .container {
             display: flex;
-            /* Para permitir o posicionamento lado a lado dos slides */
-            width: 300%;
-            /* Largura total igual a 3 vezes a largura da janela */
-            transition: transform 0.5s ease;
-            /* Adiciona uma transição suave ao deslizamento */
+            flex-direction: column;
         }
 
-        .slide {
-            flex: 1;
-            /* Distribui igualmente o espaço entre os slides */
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 10px;
+            transition: transform 0.5s;
         }
 
-        .slide img {
-            width: 100%;
-            /* Largura de cada slide */
-            object-fit: cover;
-            /* Redimensiona a imagem para cobrir todo o espaço */
+        .square:nth-child(2) {
+            transform: translateX(200px);
+            /* Isso moverá o segundo quadrado 200px para a direita */
         }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 
 <body>
-    <div class="slider-container">
-        <div class="slider">
-            <div class="slide">
-                <img src="assets/img/slide/slide.png" alt="">
-
-            </div>
-            <div class="slide">
-                <img src="assets/img/slide/slide.png" alt="">
-
-            </div>
-            <div class="slide">
-                <img src="assets/img/slide/slide.png" alt="">
-
-            </div>
-            <!-- Adicione mais slides conforme necessário -->
-        </div>
+    <div class="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
     </div>
-    <button id="prevButton">Anterior</button>
-    <button id="nextButton">Próximo</button>
-
-    <script>
-        const slider = document.querySelector('.slider');
-        const slideWidth = document.querySelector('.slide').offsetWidth;
-        let currentIndex = 0;
-
-        document.getElementById("prevButton").addEventListener("click", function () {
-            if (currentIndex > 0) {
-                currentIndex--;
-                animateSlider();
-            }
-        });
-
-        document.getElementById("nextButton").addEventListener("click", function () {
-            if (currentIndex < slider.children.length - 1) {
-                currentIndex++;
-                animateSlider();
-            }
-        });
-
-        function animateSlider() {
-            anime({
-                targets: slider,
-                translateX: -currentIndex * slideWidth, // Desloca o slider para a posição correta
-                duration: 200,
-                easing: 'easeOutQuad',
-            });
-        }
-    </script>
 </body>
 
 </html>

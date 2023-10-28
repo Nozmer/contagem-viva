@@ -6,21 +6,25 @@ input {
     margin: 0;
     /* text-overflow: ellipsis;
     white-space: nowrap; */
+    line-height: 1.5;
     overflow-x: hidden;
 }
 
 h1 {
     font-family: "iciel_gothamultra";
+    color: #202020;
     font-weight: 300;
 }
 
 h2,
 input {
     font-family: "iciel_gothambold";
+    color: #202020;
 }
 
 h3 {
     font-family: "iciel_gothammedium";
+    color: #202020;
 }
 
 input:focus {
@@ -32,6 +36,12 @@ input {
     -webkit-appearance: none;
     border: 0;
     background: none;
+}
+
+.no-select{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .textLimiter {

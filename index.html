@@ -16,6 +16,8 @@
     <!-- content -->
     <link rel="stylesheet" href="assets/css/menu1.css">
     <link rel="stylesheet" href="assets/css/menu2.css">
+    <link rel="stylesheet" href="assets/css/menu3.css">
+    <link rel="stylesheet" href="assets/css/menu4.css">
     <link rel="stylesheet" href="assets/font/stylesheet.css">
 </head>
 
@@ -66,10 +68,10 @@
                             <img src="assets/img/slide/slide.png" alt="">
                         </div>
                         <div class="slide">
-                            <img src="assets/img/slide/slide.png" alt="">
+                            <img src="assets/img/slide/slide1.png" alt="">
                         </div>
                         <div class="slide">
-                            <img src="assets/img/slide/slide.png" alt="">
+                            <img src="assets/img/slide/slide2.png" alt="">
                         </div>
                     </div>
 
@@ -122,7 +124,7 @@
                 <div id="segmented_conteinerLeft_menu2">
                     <div id="inputSearchBox">
                         <img src="assets/img/icons.svg" alt="">
-                        <input onchange="search()" type="text" placeholder="Pesquise eventos">
+                        <input type="text" placeholder="Pesquise eventos">
                     </div>
                     <div id="buttoncontainer_menu2">
                         <div class="select_buttonBox_menu2 buttonBox_menu2">
@@ -134,17 +136,19 @@
                     </div>
                 </div>
 
-                <div class="boxesWrap_menu2">
-
+                <div id="tabs">
+                    <div id="tabEvent"></div>
+                    <div style="display: none;" id="tabPoint">
+                    </div>
                 </div>
 
                 <div id="markerPage">
                     <h2>Página 1 de 5</h2>
                     <div id="spaceButtonMark">
-                        <div onclick="prevPage()" class="buttonMarkPage">
+                        <div class="buttonMarkPage">
                             <h1>&lt</h1>
                         </div>
-                        <div onclick="nextPage()" class="buttonMarkPage">
+                        <div class="buttonMarkPage">
                             <h1>></h1>
                         </div>
                     </div>
@@ -171,9 +175,99 @@
                 </div> -->
             </div>
         </div>
+
+        <!-- Menu historia -->
+        <div class="menus" style="display: none;" id="menu3">
+            <img src="assets/img/contagem.svg" alt="" srcset="">
+            <div id="containerMenu3">
+                <div id="h1Text">Historia de contagem</div>
+                <div id="h3Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pretium fermentum
+                    ullamcorper. Pellentesque eget varius est, ac mollis nulla. Fusce consequat ipsum non lectus
+                    tincidunt tempor. Suspendisse magna ex, egestas quis mauris eu, malesuada vehicula mauris. Maecenas
+                    ligula nunc, dapibus at ex ut, tempus tempus metus. Vivamus scelerisque velit a ex ullamcorper
+                    dapibus. Morbi ac aliquam velit. Ut gravida tempus justo, eu efficitur lacus dignissim sit amet.
+                    Aliquam ultricies, tortor vitae pulvinar commodo, mi lacus vulputate orci, a ullamcorper massa lacus
+                    ut nisi. Quisque dapibus fringilla arcu, a bibendum mauris rutrum vitae. Proin a facilisis sem. Nam
+                    tincidunt eget nisi aliquam dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent pretium fermentum ullamcorper. Pellentesque eget varius est, ac mollis nulla. Fusce
+                    consequat ipsum non lectus tincidunt tempor. Suspendisse magna ex, egestas quis
+                </div>
+            </div>
+            <div id="containerInfer"></div>
+        </div>
+
+        <!-- Menu info -->
+        <div class="menus" style="display: none;" id="menu4">
+            <div id="layoutMenu">
+                <div id="layoutMenuInter">
+                    <h3 id="textMenu">Esse projeto foi desenvolvido a fim de auxiliar pessoas a conhecer novos locais em
+                        Contagem. Integrantes:</h1>
+                    <div id="menuPerfis">
+                        <div class="perfil">
+                            <div class="perfilInterno">
+                                <img src="assets/img/perfil.png">
+                                <div class="nomesLayout">
+                                    <h1 class="nomeText">Nome e sobrenome 1</h1>
+                                    <h3 class="nomeFuncao">Função</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="perfil">
+                            <div class="perfilInterno">
+                                <img src="assets/img/perfil.png">
+                                <div class="nomesLayout">
+                                    <h1 class="nomeText">Nome e sobrenome 2</h1>
+                                    <h3 class="nomeFuncao">Função 2</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="perfil">
+                            <div class="perfilInterno">
+                                <img src="assets/img/perfil.png">
+                                <div class="nomesLayout">
+                                    <h1 class="nomeText">Nome e sobrenome 3</h1>
+                                    <h3 class="nomeFuncao">Função</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="perfil">
+                            <div class="perfilInterno">
+                                <img src="assets/img/perfil.png">
+                                <div class="nomesLayout">
+                                    <h1 class="nomeText">Nome e sobrenome 4</h1>
+                                    <h3 class="nomeFuncao">Função</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="perfil">
+                            <div class="perfilInterno">
+                                <img src="assets/img/perfil.png">
+                                <div class="nomesLayout">
+                                    <h1 class="nomeText">Nome e sobrenome 5</h1>
+                                    <h3 class="nomeFuncao">Função</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="layoutLogos">
+                    <div id="layoutLogoFunec">
+                        <h2>Realização:</h2>
+                        <img id="imgFunec" src="assets/img/funecLogo.png">
+                    </div>
+
+                    <a href="#" id="layoutLogoGithub">
+                        <h3 id="textLogo">Github:</h3>
+                        <div id="logoGithub">
+                            <img src="assets/img/githubLogo.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
 </body>
 
 </html>

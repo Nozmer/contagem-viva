@@ -1,0 +1,268 @@
+a {
+    text-decoration: none;
+}
+
+#conteinerLayout {
+    display: flex;
+    padding: 36px 34px;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+#segmentoMenu {
+    display: flex;
+    padding: 22px 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    align-self: stretch;
+
+    border-radius: 20px;
+    border: 3px solid rgba(241, 190, 114, 0.29);
+    background: #FAF9F9;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+#segmentoMenu img {
+    width: 174px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+#horizontal_navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.button_navbar {
+    cursor: pointer;
+    display: flex;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+    border-radius: 10px;
+}
+
+.button_navbar:hover {
+    background: #FFBD59;
+    box-shadow: 2px 5px 10px 0px rgba(47, 170, 103, 0.15);
+}
+
+.button_navbar h1 {
+    color: #FFAB2D;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#Select_button_navbar h1 {
+    color: #FFF;
+}
+
+#Select_button_navbar {
+    background: #FFBD59;
+    box-shadow: 2px 5px 10px 0px rgba(47, 170, 103, 0.15);
+}
+
+/*menu-4*/
+#layoutMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    align-self: stretch;
+}
+
+/*menu-4*/
+#layoutMenuInter {
+    display: flex;
+    padding: 36px 34px;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    border-radius: 28px;
+    background: #F6F6F6;
+}
+
+/*Menu-4*/
+#textMenu {
+    max-width: 750px;
+    color: #D39B46;
+    text-align: center;
+    font-size: 21px;
+    font-style: normal;
+    line-height: 32px;
+    /* 152.381% */
+
+}
+
+/*menu-4*/
+#layoutLogos {
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+/*menu-4*/
+#layoutLogoFunec {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+#layoutLogoFunec h2 {
+    font-size: 20px;
+    background: linear-gradient(90deg, #C25183 0.43%, #D78569 21.52%, #D5B35B 42.35%, #78B286 61.8%, #39B1A4 80.44%, #5CA5D1 100.43%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*menu-4*/
+#layoutLogoGithub {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/*menu-4*/
+#imgRealizacao {
+    font-family: iCiel Gotham Bold;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(90deg, #C25183 0.43%, #D78569 21.52%, #D5B35B 42.35%, #78B286 61.8%, #39B1A4 80.44%, #5CA5D1 100.43%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*menu-4*/
+#imgFunec {
+    width: 80px;
+    height: 34.286px;
+}
+
+/*menu-4*/
+#textLogo {
+    color: #575656;
+    text-align: center;
+    font-family: "iciel_gothambold";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 200% */
+}
+
+/*menu-4*/
+#logoGithub {
+    cursor: pointer;
+    display: flex;
+    padding: 9px 8.5px 9px 9.5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2.5px solid #999;
+}
+
+/*menu-4*/
+.perfil {
+    display: flex;
+    max-width: 280px;
+    padding: 12px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 3px solid rgba(199, 199, 199, 0.22);
+    background: #FAFAFA;
+}
+
+/*menu-4*/
+.perfilInterno {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    align-self: stretch;
+}
+
+/*menu-4*/
+.perfilInterno img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+/*menu-4*/
+.nomesLayout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3px;
+    flex: 1 0 0;
+}
+
+/*menu-4*/
+.nomeText {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    align-self: stretch;
+    overflow: hidden;
+    color: #539C74;
+    text-overflow: ellipsis;
+    font-family: "iciel_gothamultra";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+/*menu-4*/
+.nomeFuncao {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    align-self: stretch;
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    font-style: normal;
+    line-height: normal;
+}
+
+/*menu-4*/
+#menuPerfis {
+    display: flex;
+    width: 960px;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 28px 24px;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1100px) {
+    #menuPerfis {
+        width: auto !important;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    #layoutLogos {
+        flex-direction: column;
+        gap: 25px;
+    }
+}

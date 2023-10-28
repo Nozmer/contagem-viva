@@ -9,6 +9,7 @@
 
 #conteinerLeft_menu2 {
     display: flex;
+    max-width: 50%;
     flex-direction: column;
     align-items: center;
     height: fit-content;
@@ -84,7 +85,7 @@
     color: #FFF;
 }
 
-.boxesWrap_menu2 {
+#tabEvent {
     display: grid;
     grid-template-columns: repeat(3, auto);
     column-gap: 30px;
@@ -131,6 +132,217 @@
 .paragraphContent_boxWrap h2,
 .paragraphContent_boxWrap h3 {
     max-width: 250px;
+}
+
+#tabs {
+    display: flex;
+    align-self: stretch;
+}
+
+#tabPoint {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.pointInfoColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.showInfoPoint {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    background: #FAF9F9;
+
+    gap: 15px;
+    align-self: stretch;
+}
+
+.showInfoPoint img {
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-self: stretch;
+    object-fit: cover;
+    width: 100%;
+    height: 70px;
+}
+
+.content_showInfoPoint {
+    display: flex;
+    padding: 0px 40px 20px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.barActionsPoint {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.barActionsPoint h1 {
+    flex: 1 0 0;
+}
+
+.regionalIndicador {
+    display: flex;
+    padding: 5px 10px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 5px;
+    background: #2FAA67;
+}
+
+.openShowInfo {
+    cursor: pointer;
+    display: flex;
+    padding: 0px 10px 0px 10px;
+    justify-content: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 5px;
+    background: #DCDCDC;
+}
+
+.openShowInfo img {
+    display: flex;
+    align-self: center;
+    width: 10px;
+    height: 10px;
+}
+
+.content_showInfoPoint h1 {
+    font-size: 20px;
+    color: #E5A23B;
+    text-transform: uppercase;
+}
+
+.regionalIndicador h1 {
+    color: #FFF;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.pointInfoColumn h3 {
+    font-size: 12px;
+}
+
+span.subColor {
+    font-size: 14px;
+    font-family: "iciel_gothambold";
+    color: #26995A;
+    text-transform: uppercase;
+}
+
+.infoPoint {
+    display: none;
+    opacity: 0;
+    box-sizing: border-box;
+    padding: 26px 20px 26px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    align-self: stretch;
+    border-radius: 10px;
+    border: 1px solid rgba(110, 112, 111, 0.15);
+    background: #FAF9F9;
+}
+
+.row_infoPoint {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.content_infoPoint {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+}
+
+.timeAndPhotoInfo {
+    display: flex;
+    max-width: 220px;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 0 0;
+}
+
+.timeAndPhotoInfo h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #26995A;
+}
+
+.timeAndPhotoInfo img {
+    object-fit: cover;
+    height: 120px;
+    align-self: stretch;
+    border-radius: 20px;
+}
+
+.timeBox {
+    display: flex;
+    max-width: 240px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.content_timeBox {
+    display: flex;
+    max-width: 240px;
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    align-self: stretch;
+    border-radius: 10px;
+    border: 2px dashed #989898;
+}
+
+.dayRow_timeBox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 6px;
+    align-self: stretch;
+}
+
+.dayRow_timeBox h1 {
+    font-size: 12px;
+    text-transform: uppercase;
+    align-self: center;
+    flex: 1 0 0;
+    color: #545454;
+}
+
+.colorTimeBox {
+    color: #E5A23B !important;
+    text-align: right;
+}
+
+.closeTimeBox {
+    color: #D95959 !important;
 }
 
 #markerPage {
@@ -224,7 +436,7 @@
     width: 240px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 15px;
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.10);
@@ -262,12 +474,16 @@
 }
 
 @media only screen and (max-width: 1540px) {
-    .boxesWrap_menu2 {
+    #tabEvent {
         grid-template-columns: repeat(2, auto);
     }
 }
 
 @media only screen and (max-width: 1350px) {
+    #conteinerLeft_menu2 {
+        max-width: unset;
+    }
+
     #menu2 {
         flex-direction: column-reverse;
     }
@@ -276,7 +492,7 @@
         min-height: 500px;
     }
 
-    .boxesWrap_menu2 {
+    #tabEvent {
         grid-template-columns: repeat(3, auto);
     }
 }
@@ -285,24 +501,39 @@
     #menu2 {
         gap: 30px;
     }
-    
-    .boxesWrap_menu2 {
+
+    #tabEvent {
         grid-template-columns: repeat(2, auto);
     }
 }
 
 
 @media only screen and (max-width: 638px) {
+    .row_infoPoint {
+        flex-direction: column;
+    }
+
+    .timeAndPhotoInfo,
+    .timeBox {
+        width: 100%;
+        max-width: unset;
+    }
+
+    .content_timeBox{
+        width: unset;
+        max-width: unset;
+    }
+
     .boxWrapEvent_menu2 img {
         width: 240px;
         height: 120px;
     }
-    
+
     .paragraphContent_boxWrap h2,
     .paragraphContent_boxWrap h3 {
         max-width: 220px;
     }
-    
+
     #segmented_conteinerLeft_menu2 {
         flex-direction: column;
         align-items: flex-start;
@@ -326,7 +557,7 @@
 }
 
 @media only screen and (max-width: 484px) {
-    .boxesWrap_menu2 {
+    #tabEvent {
         grid-template-columns: repeat(1, auto);
     }
 
