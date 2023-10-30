@@ -176,6 +176,7 @@ a {
 /*menu-4*/
 .perfil {
     display: flex;
+    width: 280px;
     max-width: 280px;
     padding: 12px 30px;
     flex-direction: column;
@@ -199,6 +200,7 @@ a {
 .perfilInterno img {
     width: 40px;
     height: 40px;
+    object-fit: cover;
     border-radius: 100%;
 }
 
@@ -239,6 +241,7 @@ a {
     color: #000;
     text-overflow: ellipsis;
     font-size: 13px;
+    font-weight: 400;
     font-style: normal;
     line-height: normal;
 }
@@ -261,6 +264,11 @@ a {
 }
 
 @media only screen and (max-width: 490px) {
+    .perfil{
+        width: 100%;
+        flex: 1;
+    }
+
     #layoutLogos {
         flex-direction: column;
         gap: 25px;

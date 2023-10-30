@@ -208,12 +208,16 @@ function changeEventToPoint() {
             currentPage = 1;
             if (index == 1) {
                 elementClick[0].classList.remove('select_buttonBox_menu2');
+                document.querySelector("#tabs").style.display = "flex";
+                document.querySelector("#tabs").style.alignSelf = "stretch";
                 clean();
                 loadItemsForPage(currentPage, false);
                 makerMap(false)
 
             } else {
                 elementClick[1].classList.remove('select_buttonBox_menu2');
+                document.querySelector("#tabs").style.display = "grid";
+                document.querySelector("#tabs").style.alignSelf = "unset";
                 clean();
                 loadItemsForPage(currentPage, true);
                 makerMap(true)
@@ -227,50 +231,16 @@ function eventAnimationOpenInfo(element) {
     const icon = element.querySelector(".openShowInfo img");
     const elementOpen = element.querySelector(".infoPoint");
     let offset = objectClick.offsetTop;
-    elementOpen.style.transform = `translateY(-${offset / 2}px)`;
-
+    let count = 0;
 
     objectClick.addEventListener("click", function () {
-        let offset = objectClick.offsetTop;
-
-        if (elementOpen.style.transform == `translateY(-${offset / 2}px)`) {
-            elementOpen.style.display = "flex";
-            // icon
-            anime({
-                targets: icon,
-                rotate: 180,
-                duration: 400,
-                easing: 'easeOutExpo',
-            });
-
-            // elementOpen
-            anime({
-                targets: elementOpen,
-                opacity: 1,
-                translateY: 0,
-                duration: 600,
-                easing: 'easeOutExpo',
-            });
+        console.log(count);
+        if (count == 1) {
+            count = 0;
+            elementOpen.style.display = "none";
         } else {
-            anime({
-                targets: icon,
-                rotate: 0,
-                duration: 400,
-                easing: 'easeOutExpo',
-            });
-
-            // elementOpen
-            anime({
-                targets: elementOpen,
-                opacity: 0,
-                translateY: -offset / 2, // Desloca o slider para a posição correta
-                duration: 300,
-                easing: 'easeOutExpo',
-                complete: function () {
-                    elementOpen.style.display = "none";
-                }
-            });
-
+            elementOpen.style.display = "flex";
+            count++;
         };
     });
 };
@@ -482,7 +452,7 @@ function makerMap(isEvent) {
 function createMap() {
     setTimeout(function () {
         map.invalidateSize(true);
-    }, 1000);
+    }, 50);
 
     var myStyle = {
         "weight": 4,
