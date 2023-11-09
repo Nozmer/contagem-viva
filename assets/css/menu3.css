@@ -1,4 +1,4 @@
-#menu3 {
+#contentBoxHistory {
     display: flex;
     max-width: 1140px;
     width: 100%;
@@ -7,7 +7,7 @@
     align-items: flex-start;
 }
 
-#menu3 img {
+#contentBoxHistory img {
     width: 100%;
 }
 
