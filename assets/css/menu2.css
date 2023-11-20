@@ -345,6 +345,29 @@ span.subColor {
     color: #D95959 !important;
 }
 
+#markerPageAndAdd {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+#markerPageAndAdd h2 {
+    color: #606060;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#addBoxEvent {
+    display: flex;
+    padding: 10px 12px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: rgba(224, 224, 224, 0.50);
+}
+
 #markerPage {
     display: flex;
     align-items: center;
@@ -480,11 +503,11 @@ span.subColor {
 }
 
 @media only screen and (max-width: 1350px) {
-    .pointInfoColumn{
+    .pointInfoColumn {
         width: 900px;
         align-self: center;
     }
-    
+
     #conteinerLeft_menu2 {
         max-width: unset;
     }
@@ -503,7 +526,7 @@ span.subColor {
 }
 
 @media only screen and (max-width: 990px) {
-    .pointInfoColumn{
+    .pointInfoColumn {
         width: 100%;
         align-self: center;
     }
@@ -531,7 +554,7 @@ span.subColor {
         max-width: unset;
     }
 
-    .content_timeBox{
+    .content_timeBox {
         width: unset;
         max-width: unset;
     }
@@ -571,6 +594,11 @@ span.subColor {
 @media only screen and (max-width: 484px) {
     #tabEvent {
         grid-template-columns: repeat(1, auto);
+    }
+
+    #markerPageAndAdd {
+        flex-direction: column;
+        gap: 20px;
     }
 
     .boxWrapEvent_menu2 img {

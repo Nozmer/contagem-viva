@@ -43,6 +43,15 @@ const dataEvent = {
         "https://images.sympla.com.br/64ef1f03b1b90-xs.jpg",
         "https://images.sympla.com.br/64efcc7f5698b-xs.jpg",
         "https://images.sympla.com.br/63e254207139c-xs.jpg"
+    ],
+    "linkPage": [
+        "https://www.sympla.com.br/evento/aulao-hidroginastica-corpo-em-movimento/2133132",
+        "https://www.sympla.com.br/evento/i-seminario-educacao-em-sexualidade-cuidado-informacao-e-respeito-a-vida-sexual-e-reprodutiva/2121626",
+        "https://www.sympla.com.br/evento/passeio-panoramico-de-helicoptero-belo-horizonte/2136998",
+        "https://www.sympla.com.br/evento/iiii-semana-municipal-de-combate-a-sepse/2123774",
+        "https://www.sympla.com.br/evento/samba-da-independencia-toninho-geraes-av-brasil-07-09/344146",
+        "https://www.sympla.com.br/evento/5-edicao-circuito-inclusao-quebrando-barreiras/1971171",
+        "https://www.sympla.com.br/evento/curso-de-sorvetes-e-picoles-com-leagel/2214610"
     ]
 };
 

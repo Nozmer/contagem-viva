@@ -30,7 +30,9 @@ let template_iconL_point = `<div class='layoutColumnInfoElementMap'>
 </div> 
 `;
 
-let template_boxWrapEvent_menu2 = `<div class="boxWrapEvent_menu2">
+let template_boxWrapEvent_menu2 = `
+<a href="{{linkPage}}">
+<div class="boxWrapEvent_menu2">
 <img src="{{linkImage}}" alt="">
 <div class="paragraphContent_boxWrap">
     <h2 class="textLimiter">{{name}}</h2>
@@ -38,6 +40,7 @@ let template_boxWrapEvent_menu2 = `<div class="boxWrapEvent_menu2">
 <h3>{{dateEvent}}</h3>
 </div>
 </div>
+</a>
 `;
 
 let template_pointInfoColumn = `<div class="pointInfoColumn">
@@ -292,7 +295,8 @@ function loadItemsForPage(page, isEvent, searchQuery = "") {
                 name: dataJs.name[dataIndex],
                 localEvent: dataJs.localEvent[dataIndex],
                 dateEvent: dataJs.dateEvent[dataIndex],
-                linkImage: dataJs.linkImage[dataIndex]
+                linkImage: dataJs.linkImage[dataIndex],
+                linkPage: dataJs.linkPage[dataIndex]
             } : {
                 name: dataJs.name[dataIndex],
                 regional: dataJs.regional[dataIndex],
@@ -324,7 +328,8 @@ function loadItemsForPage(page, isEvent, searchQuery = "") {
                 name: dataJs.name[i],
                 localEvent: dataJs.localEvent[i],
                 dateEvent: dataJs.dateEvent[i],
-                linkImage: dataJs.linkImage[i]
+                linkImage: dataJs.linkImage[i],
+                linkPage: dataJs.linkPage[i]
             } : {
                 name: dataJs.name[i],
                 regional: dataJs.regional[i],
