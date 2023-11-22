@@ -1,5 +1,8 @@
 const dataEvent = {
     "name": [
+        "KIZOMBA CULTURAL EM CONTAGEM",
+        "I SEMIN\u00c1RIO DE ATEN\u00c7\u00c3O ESPECIALIZADA DA MICRORREGI\u00c3O DE CONTAGEM - SUS",
+        "ARENA FOCCUS FESTIVAL",
         "[AUL\u00c3O] Hidrogin\u00e1stica - Corpo em Movimento",
         "I SEMIN\u00c1RIO EDUCA\u00c7\u00c3O EM SEXUALIDADE : CUIDADO, INFORMA\u00c7\u00c3O E RESPEITO A VIDA SEXUAL E REPRODUTIVA",
         "Passeio Panor\u00e2mico de Helic\u00f3ptero H\u00edpica - Contagem 02/09/23",
@@ -9,6 +12,9 @@ const dataEvent = {
         "CURSO DE SORVETES E PICOL\u00c9S COM MARVI"
     ],
     "localEvent": [
+        "R. F\u00e9lix de Almeida, 200 - Contagem, MG",
+        "PUC Minas Contagem - Contagem, MG",
+        "SOCIEDADE H\u00cdPICA MINAS GERAIS | Contagem - Contagem, MG",
         "Sesc Contagem - Contagem, MG",
         "Una Contagem - Contagem, MG",
         "Sociedade H\u00edpica De Minas Gerais - Contagem, MG",
@@ -18,6 +24,9 @@ const dataEvent = {
         "CEASA Centrais de Abastecimento de Minas Gerais - Contagem, MG"
     ],
     "dateEvent": [
+        "Dom, 03 Dez \u00b7 13:00",
+        "23 Nov24 Nov",
+        "Sab, 18 Mai \u00b7 22:30",
         "29 Ago",
         "Sex, 01 Set \u00b7 08:00",
         "07 Out",
@@ -27,6 +36,9 @@ const dataEvent = {
         "Qui, 21 Set \u00b7 08:30"
     ],
     "coordinateEvent": [
+        "-19.9336652 -44.0856655",
+        "-19.941501799999998 -44.07612120719689",
+        "-19.95712815 -44.05603773955844",
         "-19.953159749999998 -44.06609697732288",
         "-19.9203908 -44.0757184",
         "-19.95712815 -44.05603773955844",
@@ -36,6 +48,9 @@ const dataEvent = {
         "-19.8912484 -44.0450032"
     ],
     "linkImage": [
+        "https://images.sympla.com.br/655378c352880-xs.png",
+        "https://images.sympla.com.br/654a866fe64b3-xs.jpg",
+        "https://images.sympla.com.br/654db87115593-xs.png",
         "https://images.sympla.com.br/64e8ce8bc1635-xs.png",
         "https://images.sympla.com.br/64de1cca9fc8f-xs.jpg",
         "https://images.sympla.com.br/64ee0b5da05ca-xs.jpg",
@@ -45,6 +60,9 @@ const dataEvent = {
         "https://images.sympla.com.br/63e254207139c-xs.jpg"
     ],
     "linkPage": [
+        "https://www.sympla.com.br/evento/kizomba-cultural-em-contagem/2248286",
+        "https://www.sympla.com.br/evento/i-seminario-de-atencao-especializada-da-microrregiao-de-contagem-sus/2237874",
+        "https://www.sympla.com.br/evento/arena-foccus-festival/2224539",
         "https://www.sympla.com.br/evento/aulao-hidroginastica-corpo-em-movimento/2133132",
         "https://www.sympla.com.br/evento/i-seminario-educacao-em-sexualidade-cuidado-informacao-e-respeito-a-vida-sexual-e-reprodutiva/2121626",
         "https://www.sympla.com.br/evento/passeio-panoramico-de-helicoptero-belo-horizonte/2136998",
@@ -78,11 +96,11 @@ const dataPoint = {
     "regional": [
         "Petrolândia",
         "Petrolândia",
-        "Estância Imperia",
+        "Estância Imperiais",
         "Tropical",
         "Solar do Madeira",
         "Solar do Madeira",
-        "Sapucais",
+        "Sapucaias",
         "Centro de Contagem",
         "Centro de Contagem",
         "Centro de Contagem",
