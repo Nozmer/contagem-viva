@@ -12,3 +12,5 @@ Pesquisa em Contagem, com mais de 50 respostas, revelou que a disseminação de 
 
 ## Conclusão
 O site Contagem Viva democratiza o acesso à cultura. O usuário poderá acessar a programação e escolher o que lhe convém e a distância a percorrer. A atualização será constante, e a agenda é dinâmica e sempre intuitiva.
+
+Veja mais em: http://funecriacho.contagem.mg.gov.br/2023/11/23/trabalho-contagem-viva/
